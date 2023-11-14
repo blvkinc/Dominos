@@ -1,56 +1,67 @@
 package base;
 
 /**
+ * Represents a point in a space with coordinates, theta, and phi.
+ * 
  * @author Kevan Buckley, maintained by __student
  * @version 2.0, 2014
  */
-
 public class SpacePlace {
-  private int xOrg;
-  private int yOrg;
-  private double theta;
-  private double phi;
 
-  public SpacePlace() {
-    xOrg = 0;
-    yOrg = 0;
-  }
+    private int xOrg;
+    private int yOrg;
+    private double theta;
+    private double phi;
 
-  public SpacePlace(double theta, double phi) {
-    super();
-    this.theta = theta;
-    this.phi = phi;
-  }
+    /**
+     * Default constructor, initializes coordinates to (0, 0).
+     */
+    public SpacePlace() {
+        xOrg = 0;
+        yOrg = 0;
+    }
 
-  public int getxOrg() {
-    return xOrg;
-  }
+    /**
+     * Constructor with theta and phi.
+     * 
+     * @param theta The theta coordinate.
+     * @param phi   The phi coordinate.
+     */
+    public SpacePlace(double theta, double phi) {
+        this(); // Call the default constructor to set xOrg and yOrg
+        this.theta = theta;
+        this.phi = phi;
+    }
 
-  public void setxOrg(int xOrg) {
-    this.xOrg = xOrg;
-  }
+    public int getxOrg() {
+        return xOrg;
+    }
 
-  public int getyOrg() {
-    return yOrg;
-  }
+    public void setxOrg(int xOrg) {
+        this.xOrg = xOrg;
+    }
 
-  public void setyOrg(int yOrg) {
-    this.yOrg = yOrg;
-  }
+    public int getyOrg() {
+        return yOrg;
+    }
 
-  public double getTheta() {
-    return theta;
-  }
+    public void setyOrg(int yOrg) {
+        this.yOrg = yOrg;
+    }
 
-  public void setTheta(double theta) {
-    this.theta = theta;
-  }
+    public double getTheta() {
+        return theta;
+    }
 
-  public double getPhi() {
-    return phi;
-  }
+    public void setTheta(double theta) {
+        this.theta = theta;
+    }
 
-  public void setPhi(double phi) {
-    this.phi = phi;
-  }
+    public double getPhi() {
+        return phi;
+    }
+
+    public void setPhi(double phi) {
+        this.phi = phi;
+    }
 }
