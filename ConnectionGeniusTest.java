@@ -9,7 +9,7 @@ public class ConnectionGeniusTest {
 
     @Test
     public void testFireUpGame() {
-        // Arrange
+        // Arrang
         ConnectionGenius connectionGenius = new ConnectionGenius(getDummyInetAddress());
         ByteArrayOutputStream outContent = new ByteArrayOutputStream();
         System.setOut(new PrintStream(outContent));

@@ -2,7 +2,7 @@ package base;
 
 /**
  * Represents a Domino that can be placed on a game board.
- * 
+ 
  * @author Kevan Buckley, maintained by __student
  * @version 2.0, 2014
  */

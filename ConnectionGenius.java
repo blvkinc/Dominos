@@ -3,7 +3,7 @@ import java.net.InetAddress;
 
 /**
  * Represents a ConnectionGenius that handles game initiation.
- * 
+  
  * @author Kevan Buckley, maintained by __student
  * @version 2.0, 2014
  */
